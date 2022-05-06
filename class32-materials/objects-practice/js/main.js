@@ -41,7 +41,13 @@ class BackEndDev extends Contractor{
         return this._tech
     }
     listTech(){
-        let techString = this.tech.reduce()
+        let techString = ''
+        if (this.tech.length > 2)
+        this.tech.forEach( (v, i) => {
+            if (this.tech.length > 2){
+
+            }
+        })
         console.log(`I'm proficient in ${this.tech.slice(0, this.tech.length - 1).join(', ')} and ${this.tech[this.tech.length - 1]}.`)
     }
 }
